@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <h2>🎓 Smart School</h2>
+    <div>
+        <button onclick="toggleDarkMode()">🌙</button>
+        <button onclick="logout()">Logout</button>
+    </div>
+</header>
+
+<section class="dashboard">
+
+    <div class="stats">
+        <div class="stat-card">
+            <h3>Total Students</h3>
+            <p id="count">0</p>
+        </div>
+    </div>
+
+    <div class="form-card">
+        <h3>Add Student</h3>
+        <input id="name" placeholder="Name">
+        <input id="age" placeholder="Age">
+        <input id="course" placeholder="Course">
+        <button onclick="addStudent()">Add Student</button>
+    </div>
+
+    <input id="search" placeholder="🔍 Search student..." onkeyup="searchStudent()">
+
+    <div id="studentContainer"></div>
+
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
